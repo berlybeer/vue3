@@ -17,6 +17,9 @@
       <p>
         welcome, {{lastName}}
       </p>
+
+      <button v-on:click="ClickedMe">Click me</button>
+      <input type="text" @keyup.enter="doSomething" placeholder="Write your code">
     </div>
   </div>
 </template>
@@ -31,7 +34,15 @@ export default {
     return{
       lastName: 'Berly'
     }
-  }  
+  },
+  methods:{
+    ClickedMe: function(){
+      console.log("You click on the button")
+    },
+    doSomething(){
+      console.log("Coupon Applied")
+    }
+  } 
 };
 </script>
 
