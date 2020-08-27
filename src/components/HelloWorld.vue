@@ -1,16 +1,16 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <alert>
+    <alert mode="danger">
       First Alert
     </alert>
-    <alert>
+    <alert mode="primary">
       Second Alert
     </alert>
-    <alert>
+    <alert mode="secondary">
       Last Alert
     </alert>
-    <alert></alert>
+    <alert mode="success">New Alert</alert>
     <alert></alert>
   </div>
 </template>
