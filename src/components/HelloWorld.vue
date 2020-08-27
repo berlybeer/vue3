@@ -11,7 +11,13 @@
       Last Alert
     </alert>
     <alert mode="success">New Alert</alert>
-    <alert></alert>
+
+    <div>
+      <input type="text" v-model="lastName" placeholder="Your name">
+      <p>
+        welcome, {{lastName}}
+      </p>
+    </div>
   </div>
 </template>
 
@@ -20,7 +26,12 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
-  }
+  },
+  data(){
+    return{
+      lastName: 'Berly'
+    }
+  }  
 };
 </script>
 
